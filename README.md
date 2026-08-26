@@ -84,12 +84,13 @@ Built to practice:
 * Truth tables
 * SOP & POS
 * Modular programming
+* BCD & Gray code
+* Octal & hexadecimal conversions
 * Git & GitHub
+
 
 ## 🛣️ Future
 
-* Octal & hexadecimal conversions
-* BCD & Gray code
 * Binary multiplier
 * Half adder/subtractor
 * Advanced Boolean simplification
