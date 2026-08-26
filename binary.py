@@ -1,7 +1,19 @@
 def binary_to_decimal(binary):
-    return int(binary, 2)
 
+    if not validate_binary(binary):
+        return "Invalid binary number"
+
+    return int(binary, 2)
 def decimal_to_binary(decimal):
+
+    if not validate_decimal(str(decimal)):
+        return "Invalid decimal number"
+
+    decimal = int(decimal)
+
+    if decimal < 0:
+        return "Negative numbers are not supported"
+
     return bin(decimal)[2:]
 
 def binary_calculator(a, op, b):
@@ -23,15 +35,47 @@ def binary_calculator(a, op, b):
         return decimal_to_binary(a * b)
     else:
         return "Invalid operation"
+def validate_binary(value):
+    if not value:
+        return False
+
+    for bit in value:
+        if bit not in "01":
+            return False
+
+    return True
+
+
+def validate_decimal(value):
+    try:
+        int(value)
+        return True
+    except ValueError:
+        return False
+
+
+def validate_boolean(value):
+    return value in ["0", "1"]
 def ones_complement(binary):
-    result =""
+
+    if not validate_binary(binary):
+        return "Invalid binary number"
+
+    result = ""
+
     for bit in binary:
-        if bit=="0":
-            result+="1"
+
+        if bit == "0":
+            result += "1"
         else:
-            result+="0"
-    return result 
+            result += "0"
+
+    return result
 def twos_complement(binary):
+
+    if not validate_binary(binary):
+        return "Invalid binary number"
+
     ones = ones_complement(binary)
 
     decimal = int(ones, 2) + 1

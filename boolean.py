@@ -555,40 +555,30 @@ def generate_sop(exp):
 # =========================
 # POS
 # =========================
-
 def generate_pos(exp):
 
-    result = truth_table(exp)
+    variables, table = truth_table(exp)
 
-    if isinstance(result, str):
-        return result
+    if isinstance(table, str):
+        return table
 
-    variables, table = result
-
-    terms = []
+    pos_terms = []
 
     for row in table:
 
-        output = row[-1]
+        if row[-1] == 0:
 
-        if output == 0:
+            values = row[:-1]
+            terms = []
 
-            term = ""
-
-            for i in range(len(variables)):
-
-                variable = variables[i]
-                value = row[i]
+            for variable, value in zip(variables, values):
 
                 if value == 0:
-                    term += variable
+                    terms.append(variable)
                 else:
-                    term += variable + "'"
+                    terms.append(variable + "'")
 
-            terms.append("(" + " + ".join(term) + ")")
+            pos_terms.append("(" + "+".join(terms) + ")")
 
-    if not terms:
-        return "1"
-
-    return " * ".join(terms)
+    return "*".join(pos_terms)
 

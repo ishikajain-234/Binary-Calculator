@@ -430,31 +430,35 @@ def boolean_menu():
         else:
             print("Invalid choice")
 
+def main():
+    while True:
+        print("\n")
+        print("================================")
+        print("      BINARY & BOOLEAN CALC")
+        print("================================")
+        print("1. Number System Conversion")
+        print("2. Binary Operations")
+        print("3. Bitwise Operations")
+        print("4. Boolean Algebra")
+        print("5. Exit")
 
-# =========================
-print("===== BINARY & BOOLEAN CALCULATOR =====")
-print("1. Number System Conversion")
-print("2. Binary Operations")
-print("3. Bitwise Operations")
-print("4. Boolean Algebra")
-print("5. Exit")
+        choice = input("Choose: ")
 
-choose = input("Choose one option: ")
+        if choice == "1":
+            number_system_menu()
 
-if choose == "1":
-    number_system_menu()
+        elif choice == "2":
+            binary_menu()
 
-elif choose == "2":
-    binary_operations_menu()
+        elif choice == "3":
+            bitwise_menu()
 
-elif choose == "3":
-    bitwise_menu()
+        elif choice == "4":
+            boolean_menu()
 
-elif choose == "4":
-    boolean_menu()
+        elif choice == "5":
+            print("\nGoodbye!")
+            break
 
-elif choose == "5":
-    print("Exit")
-
-else:
-    print("Invalid option")
+        else:
+            print("Invalid choice")

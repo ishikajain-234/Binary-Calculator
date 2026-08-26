@@ -8,15 +8,19 @@ A Python-based **command-line calculator** for binary arithmetic, number systems
 
 - Binary → Decimal
 - Decimal → Binary
-  \*Binary ↔ Hexadecimal
-- BCD
-- Gray Code
+-Binary ↔ Hexadecimal
+-Binary→Octal
+
+
+
 
 ### Binary Operations
 
 - Addition, subtraction, multiplication, integer division
 - 1's complement
 - 2's complement
+- BCD
+- Gray Code
 
 ### Bitwise Operations
 
