@@ -1,122 +1,104 @@
-# Binary & Boolean Calculator
+# 🔢 Binary & Boolean Calculator
 
-A Python-based command-line calculator designed for **binary computation, bitwise operations, and Boolean algebra**.
+A Python-based **command-line calculator** for binary arithmetic, number systems, bitwise operations, and Boolean algebra.
 
-The project goes beyond basic binary-to-decimal conversion by combining binary arithmetic, bitwise operations, Boolean operations, and Boolean expression simplification into one application.
+## ✨ Features
 
-## Features
+### Number Systems
 
-### 🔢 Binary & Decimal Conversion
+* Binary → Decimal
+* Decimal → Binary
 
-- Binary → Decimal
-- Decimal → Binary
+### Binary Operations
 
-### ➕ Binary Arithmetic
+* Addition, subtraction, multiplication, integer division
+* 1's complement
+* 2's complement
 
-Perform arithmetic directly on binary numbers:
+### Bitwise Operations
 
-- Addition `+`
-- Subtraction `-`
-- Multiplication `*`
-- Division `/`
+* AND `&`
+* OR `|`
+* XOR `^`
+* NOT
+* Left Shift `<<`
+* Right Shift `>>`
 
-### ⚡ Bitwise Operations
+### Boolean Algebra
 
-Perform operations on binary numbers at the bit level:
+* AND / OR / XOR / NOT
+* Boolean expression evaluator
+* Parentheses and implicit AND
+* Truth table generator
+* Boolean expression simplification
+* Step-by-step simplification
+* Canonical SOP
+* Canonical POS
+* Input validation
 
-- AND `&`
-- OR `|`
-- XOR `^`
-- NOT `~`
-- Left Shift `<<`
-- Right Shift `>>`
+## 🖥️ Interface
 
-### 🧠 Boolean Operations
+The project uses a simple menu-driven terminal interface:
 
-Work with Boolean values (`0` and `1`):
+```text id="0p3xq7"
+╔══════════════════════════════════════════╗
+║        BINARY & BOOLEAN CALCULATOR       ║
+║                 V2.0                     ║
+╚══════════════════════════════════════════╝
 
-- AND
-- OR
-- XOR
-- NOT
-
-### 📐 Boolean Algebra
-
-Basic Boolean expression simplification using Boolean laws.
-
-Currently supported:
-
-```text
-A + A' = 1
-A * A' = 0
-A + 0  = A
-A + 1  = 1
-A * 1  = A
-A * 0  = 0
+[1] Number System Conversion
+[2] Binary Operations
+[3] Bitwise Operations
+[4] Boolean Algebra
+[5] Exit
 ```
 
-## Project Structure
+## 📁 Structure
 
-```text
-binary-boolean-calculator/
-│
-├── main.py       # Command-line interface
-├── binary.py     # Binary conversion and arithmetic
-├── bitwise.py    # Bitwise operations
-├── boolean.py    # Boolean operations and algebra
-└── README.md     # Project documentation
+```text id="qg9t4m"
+calc/
+├── main.py
+├── binary.py
+├── bitwise.py
+├── boolean.py
+└── README.md
 ```
 
-## How to Run
+## 🚀 Run
 
-Make sure Python 3 is installed.
-
-```bash
-git clone <your-repository-url>
-cd binary-boolean-calculator
+```bash id="qv8m5x"
 python main.py
 ```
 
-If your system uses `python3`:
+No external packages are required.
 
-```bash
-python3 main.py
-```
+## 📚 Concepts
 
-## Example
+Built to practice:
 
-```text
-===== BINARY & BOOLEAN CALCULATOR =====
+* Python
+* Binary number systems
+* Binary arithmetic
+* Bitwise operations
+* Boolean algebra
+* Truth tables
+* SOP & POS
+* Modular programming
+* Git & GitHub
 
-1. Binary ↔ Decimal
-2. Arithmetic
-3. Bitwise
-4. Boolean Algebra
-5. Exit
+## 🛣️ Future
 
-Choose one option: 2
+* Octal & hexadecimal conversions
+* BCD & Gray code
+* Binary multiplier
+* Half adder/subtractor
+* Advanced Boolean simplification
+* Karnaugh maps
+* Automated tests
 
-===== ARITHMETIC =====
+## 👩‍💻 Author
 
-Enter first binary number: 1010
-Enter second binary number: 0011
-Enter operation (+, -, *, /): +
+**Ishika Jain**
+GitHub: [ishikajain-234](https://github.com/ishikajain-234)
 
-Result: 1101
-```
-
-## Project Goal
-
-A specialized calculator combining **Binary Arithmetic, Bitwise Operations, and Boolean Algebra** in one tool, with a web interface planned for future versions.
-
-## Current Status
-
-**Version 1 — Terminal Application**
-
-Core binary, arithmetic, bitwise, and basic Boolean operations are implemented.
-
-**Next:** Advanced Boolean simplification, truth tables, error handling, and web interface.
-
-## License
-
-This project is open source.
+**Version:** 2.0
