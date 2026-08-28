@@ -94,7 +94,7 @@ Built to practice:
 - Modular programming
 - BCD & Gray code
 - Octal & hexadecimal conversions
-- Git & GitHub
+
 
 ## 🛣️ Future
 
