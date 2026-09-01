@@ -7,9 +7,12 @@ from boolean import (
     generate_sop,
     generate_pos
 )
-from bitwise import not_calculator
-from bitwise import bitwise_calculator
-from bitwise import shift_calculator
+from bitwise import (
+
+    not_calculator,
+    bitwise_calculator,
+    shift_calculator
+    )
 from binary import (
     binary_calculator,
     ones_complement,
