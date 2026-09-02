@@ -45,14 +45,12 @@ def validate_binary(value):
 
     return True
 
-
 def validate_decimal(value):
     try:
         int(value)
         return True
     except ValueError:
         return False
-
 
 def validate_boolean(value):
     return value in ["0", "1"]

@@ -309,7 +309,7 @@ def boolean_menu():
 
     while True:
 
-        print("\n===== BOOLEAN ALGEBRA =====")
+        print("\n==== BOOLEAN ALGEBRA ====")
         print("1. Boolean Operation")
         print("2. Boolean NOT")
         print("3. Evaluate Expression")
